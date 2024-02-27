@@ -344,7 +344,7 @@ input:focus {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 90% 10% 0 10%;
+    margin: 80% 10% 5% 10%;
 }
 
 #botaoCopiar:hover {
@@ -413,6 +413,10 @@ input:focus {
     .lado_direito_text {
         border: none
     }
+
+    .mensagem {
+        height: auto;
+    }
     
 
     #botaoCopiar {
@@ -428,7 +432,7 @@ input:focus {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin: 2% 10vw 0 10vw; /* Ajustei as margens para posicionamento dentro da caixa */
+        margin: 2% 10vw 2% 10vw; /* Ajustei as margens para posicionamento dentro da caixa */
     }
 
     .musica {
