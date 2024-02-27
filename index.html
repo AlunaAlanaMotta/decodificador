@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador-Alana-motta</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="https://www.alura.com.br" alt="Link para Alura">
+                <img src="./img/Frame 6.png" alt="Logo Alura">
+            </a>        
+            
+            <div class="musica">
+        
+                <audio controls id="backgroundAudio" autoplay loop>
+                    <source src="abertura-game-of-thrones.mp3" type="audio/mp3">
+                        Seu navegador não suporta a tag de áudio.
+                </audio>
+            </div>
+
+        </header>
+        
+        <div class="animated-background">
+            <img id="img-fundo" src="img/drogon-gif.gif">
+
+            <main class="conteudo">
+                <section class="conteudo_lado_esquerdo">
+                    <div class="conteudo_lado_esquerdo_txt">
+                        <textarea  placeholder="Digite seu texto aqui"  class="conteudo_lado_esquerdo_texto" pattern="([aA-zZ]+)" id="myInput"></textarea>
+        
+                    </div>
+                    
+                    <div class="botoes">
+                        <div class="botoes_mensagem_texto">
+                            <img src="img/ponto-exclamacao-1.png" class="conteudo_lado_esquerdo_img">
+                            <p>Apenas letras minúsculas e sem acento!</p>
+                        </div>
+                        <div class="botoes_botoes">
+                            <button onclick="criptografar()" class="botoes_cripto">Criptografar</button>
+                            <button onclick="descriptografar()" class="botoes_descripto">Descriptografar</button>
+                        </div>
+                        
+                    </div>
+                    
+                </section>
+
+                <section class="lado_direito" id="output">
+                    <img src="img/Daenerys-semfundo2.png" class="lado_direito_imagem">
+                    <div class="lado_direito_caixa">
+                        <p class="lado_direito_paragrafo">Nenhuma mensagem encontrada</p>
+                        <textarea class="lado_direito_text">Digite um texto que você deseja criptografar ou descriptografar.</textarea>
+                        <textarea id="mensagem"></textarea>
+                    </div>
+                </section>
+
+            </main>
+            <footer class="rodape">
+                <p>Desenvolvido por Alana Motta</p>
+                <a href="https://github.com/AlunaAlanaMotta">
+                    <img src="img/icone-github.png" width="20px" height="20px">
+                </a>
+                <a href="https://www.linkedin.com/in/alana-motta-da-cruz-dev/">
+                    <img src="img/icone-linkedin.png" width="20px" height="20px">
+                </a>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+<script src="decodificador.js"></script>
+
+</html>

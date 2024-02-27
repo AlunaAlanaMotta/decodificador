@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px; /* Defina um valor apropriado para a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh; /* Pelo menos 100% da altura da viewport */
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #0A3871;
+}
+
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.animated-background #img-fundo {
+    width: 100%;
+    height: 100%;
+}
+
+header.header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding: 2% 5% 0 5%;
+}
+
+
+
+.header img{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px;
+    float: right;
+    margin: 5px;
+}
+
+.header img:hover {
+    background-color: #000000;
+}
+
+audio#backgroundAudio {
+    padding: 2%;
+    margin: 5%;
+}
+
+.musica {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px;
+}
+
+h3 {
+    color: #0A3871; /* Cor do texto */
+    margin: 0;
+}
+
+audio {
+    margin-top: 10px; /* Espaço entre o título e o áudio */
+}
+
+main {
+    padding: 1%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2;
+    top: 15%; /* Ajuste conforme necessário para posicionar dentro da área visível */
+    height: 28em;
+    width: 90%;
+    margin: 2% 5% 0 5%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo_lado_esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 2%;
+    margin-right: 5%;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    border-radius: 10px;
+}
+
+.conteudo_lado_esquerdo_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px;
+    height: 17em;
+}
+
+.conteudo_lado_esquerdo_texto {
+    color: #ffffff;
+    width: 100%;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    border: transparent;
+    background: none;
+    outline: none;
+}
+
+.conteudo_lado_esquerdo_texto::placeholder {
+    color: #ffffff;
+}
+
+.conteudo_lado_esquerdo_img {
+    width: 6%; 
+    height: auto;
+}
+
+input:focus {
+    outline:transparent;
+}
+
+.botoes_mensagem_texto {
+    display: inline-flex;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    gap: 8px;
+}
+
+.botoes_botoes {
+    width: 100%;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.botoes_cripto {
+    flex: 1 0 0;
+    width: calc(50% - 12px);
+    padding: 4%;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    text-align: center;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+
+.botoes_cripto:hover {
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+.botoes_descripto {
+    flex: 1 0 0; 
+    text-align: center;
+    width: calc(50% - 12px);
+    padding: 4%;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botoes_descripto:hover {
+    color: #D8DFE8;
+    background-color: #0A3871;
+}
+
+.lado_direito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    border-radius: 10px;
+    width: 35%;
+    min-width: 200px;
+    height: 100%;
+    margin-top: 0;
+}
+
+.lado_direito_caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0%;
+    flex: 1;
+}
+
+.lado_direito_paragrafo {
+    color: #0A3871;
+    align-self: stretch;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-family: "Grenze Gotisch", serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 2% 2% 1% 2%; 
+}
+.lado_direito_imagem {
+    width: 80%; 
+    margin: 5%;
+}
+
+
+.lado_direito_text {
+    padding: 1%;
+    align-self: stretch;
+    color: #000000;
+    text-align: center;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.rodape {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.rodape p {
+    margin-left: 30%;
+
+}
+
+.rodape a {
+    margin-left: 5%;
+
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    border-radius: 10px;
+    width: 35%;
+    min-width: 200px;
+    height: 100%;
+    margin-top: 0;
+}
+
+#mensagem {
+    display: flex;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    border: none;
+    background: transparent;
+    align-items: center;
+    padding: 2%;
+    outline: none;
+
+}
+
+#botaoCopiar {
+    width: 90%;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-family: "Grenze Gotisch", serif;
+    color: #0A3871;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 90% 10% 0 10%;
+}
+
+#botaoCopiar:hover {
+    color: #D8DFE8;
+    background-color: #0A3871;
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .animated-background #img-fundo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteudo_lado_esquerdo,
+    .lado_direito {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lado_direito {
+        order: initial;
+    }
+
+    .lado_direito img{
+        display: none;
+    }
+
+    .lado_direito_paragrafo {
+        font-size: 1rem;
+        width: 90%;
+        margin: 5% 2vw;
+    }
+
+    main {
+        margin-bottom: 10rem; /* Adiciona espaço extra entre o conteúdo e o rodapé */
+        height: auto;
+    }
+
+    .conteudo_lado_esquerdo,
+    .lado_direito {
+        width: 90%; /* Ajusta a largura para ocupar 90% da largura do main */
+        margin: 0 auto; /* Centraliza os elementos */
+    }
+
+    .conteudo_lado_esquerdo_txt {
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+    .botoes_cripto,
+    .botoes_descripto {
+        font-size: 1rem; /* Defina o tamanho da fonte desejado para telas menores */
+        padding: 10px; /* Ajuste o padding conforme necessário */
+    }
+
+    .lado_direito {
+        flex-direction: column;
+        margin-top: 5rem; /* Adiciona espaço entre o lado esquerdo e o lado direito */
+        border: none;
+    }
+
+    .lado_direito_text {
+        border: none
+    }
+    
+
+    #botaoCopiar {
+        width: 80%; /* Reduzi um pouco a largura para evitar que ultrapasse as bordas da caixa */
+        padding: 12px; /* Ajustei o padding para um valor menor */
+        border-radius: 12px; /* Reduzi o raio da borda para um valor menor */
+        border: 1px solid #0A3871;
+        font-family: "Grenze Gotisch", serif;
+        color: #0A3871;
+        text-align: center;
+        font-optical-sizing: auto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 2% 10vw 0 10vw; /* Ajustei as margens para posicionamento dentro da caixa */
+    }
+
+    .musica {
+        width: 150px; 
+        background: none;
+        margin: 5px;
+    }
+
+    .header img{
+        background: none;
+        width: 110px;
+    }
+
+    .rodape {
+        line-height: 25px;
+        padding: 2%;
+    }
+    
+}
+
+
+
+
+
+
+
