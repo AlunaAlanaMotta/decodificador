@@ -65,6 +65,7 @@ header.header {
 }
 
 audio#backgroundAudio {
+    display: none;
     padding: 2%;
     margin: 5%;
 }
