@@ -9,7 +9,7 @@
 }
 
 .container {
-    max-width: 1600px; /* Defina um valor apropriado para a largura máxima */
+    max-width: 1024px; 
     margin: 0 auto; /* Centraliza o conteúdo na página */
 }
 
@@ -21,7 +21,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #0A3871;
+    background: url(../img/drogon-gif.gif);
 }
 
 
@@ -47,21 +47,16 @@ header.header {
     justify-content: space-between;
     position: relative;
     z-index: 2;
-    padding: 2% 5% 0 5%;
 }
 
-
-
-.header img{
+.header img {
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
-    border-radius: 10px;
-    float: right;
     margin: 5px;
-}
-
-.header img:hover {
-    background-color: #000000;
 }
 
 audio#backgroundAudio {
@@ -88,18 +83,20 @@ audio {
 
 main {
     padding: 1%;
-    align-items: center;
+    align-items: stretch;
     display: flex;
     flex-direction: row;
     position: absolute;
     z-index: 2;
-    top: 15%; /* Ajuste conforme necessário para posicionar dentro da área visível */
-    height: 28em;
+    top: 9%; 
+    height: auto;
     width: 90%;
     margin: 2% 5% 0 5%;
 }
 
+
 .conteudo {
+    align-items: stretch;
     display: flex;
     justify-content: space-between;
 }
@@ -108,7 +105,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100%;
     padding: 2%;
     margin-right: 5%;
     background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
@@ -135,6 +131,7 @@ main {
     border: transparent;
     background: none;
     outline: none;
+    resize: none;
 }
 
 .conteudo_lado_esquerdo_texto::placeholder {
@@ -188,6 +185,7 @@ input:focus {
     font-weight: 400;
     line-height: normal;
     border: none;
+    cursor: pointer;
 }
 
 .botoes_cripto:hover {
@@ -212,6 +210,7 @@ input:focus {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    cursor: pointer;
 }
 
 .botoes_descripto:hover {
@@ -228,6 +227,7 @@ input:focus {
     border-radius: 10px;
     width: 35%;
     min-width: 200px;
+    max-width: 30%;
     height: 100%;
     margin-top: 0;
 }
@@ -238,6 +238,7 @@ input:focus {
     align-items: flex-start;
     padding: 0%;
     flex: 1;
+    max-width: 100%;
 }
 
 .lado_direito_paragrafo {
@@ -254,7 +255,8 @@ input:focus {
 }
 .lado_direito_imagem {
     width: 80%; 
-    margin: 5%;
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção original da imagem */
 }
 
 
@@ -272,6 +274,7 @@ input:focus {
     border: none;
     background: transparent;
     outline: none;
+    resize: none;
 }
 
 .rodape {
@@ -310,6 +313,7 @@ input:focus {
     min-width: 200px;
     height: 100%;
     margin-top: 0;
+    resize: none;
 }
 
 #mensagem {
@@ -317,7 +321,7 @@ input:focus {
     font-family: "Grenze Gotisch", serif;
     font-optical-sizing: auto;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -325,8 +329,11 @@ input:focus {
     border: none;
     background: transparent;
     align-items: center;
-    padding: 2%;
     outline: none;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
 
 }
 
@@ -345,12 +352,15 @@ input:focus {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 80% 10% 5% 10%;
+    margin: 20vh 2vh 2vh 2vh;
+    max-width: 800px;
+    cursor: pointer;
 }
 
 #botaoCopiar:hover {
     color: #D8DFE8;
     background-color: #0A3871;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -443,6 +453,8 @@ input:focus {
     }
 
     .header img{
+        position: static; /* Altera para o posicionamento padrão em telas menores */
+        margin: 0;
         background: none;
         width: 110px;
     }
@@ -452,6 +464,17 @@ input:focus {
         padding: 2%;
     }
     
+}
+
+@media screen and (max-width: 1024px) {
+    .main .container {
+        flex-direction: column;
+    }
+
+    .header img {
+        display: flex;
+        margin: 0;
+    }
 }
 
 
