@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
-
 
 * {
     box-sizing: border-box;
@@ -65,20 +63,9 @@ audio#backgroundAudio {
     margin: 5%;
 }
 
-.musica {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
-    border-radius: 10px;
-}
-
 h3 {
     color: #0A3871; /* Cor do texto */
     margin: 0;
-}
-
-audio {
-    margin-top: 10px; /* Espaço entre o título e o áudio */
 }
 
 main {
@@ -411,8 +398,8 @@ input:focus {
     }
     .botoes_cripto,
     .botoes_descripto {
-        font-size: 1rem; /* Defina o tamanho da fonte desejado para telas menores */
-        padding: 10px; /* Ajuste o padding conforme necessário */
+        font-size: 1rem; /* Define o tamanho da fonte desejado para telas menores */
+        padding: 10px; /* Ajusta o padding conforme necessário */
     }
 
     .lado_direito {
